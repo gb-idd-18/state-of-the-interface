@@ -1,0 +1,35 @@
+html, body, main {
+	height: 100%;
+}
+body {
+	font: 1em helvetica, sans-serif;
+}
+.panel {
+	position: fixed;
+	top: 1em;
+	left: 1em;
+	background-color: #eee;
+	padding: 1em;
+	box-shadow: 0 0 1em rgba(0,0,0,0.2);
+}
+.full-viewport {
+	height: 100%;
+	background-color: tomato;
+	display: grid;
+	place-content: center;
+}
+.full-viewport:nth-child(even) {
+	background-color: gold;
+}
+.full-viewport h2 {
+	margin: 0;
+	font: 900 3em helvetica, sans-serif;
+	text-transform: uppercase;
+	text-shadow: 0 0 0.125em rgba(0,0,0,0.2);
+}
+.whatever-bruh {
+background-color: red;
+}
+.autocache {
+	color: blue;
+}
