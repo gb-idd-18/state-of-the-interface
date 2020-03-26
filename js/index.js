@@ -15,21 +15,25 @@ let theStateOfTheInterface = (event) => {
 
   if (winY >= maxY) {
     // You have definitely hit the bottom
+
+    // Add new content when we hit the bottom
     // document.querySelector('#content').innerHTML += `
     //   <section class="full-viewport">
     //     <h2>Thank you.</h2>
     //   </section>
     //   `
+
+    // Update the variable that's tracking our state
     haveHitBottom = true
   }
 
 
-  if (document.querySelector('section:nth-child(2)').getBoundingClientRect().top < winH / 2) {
+/*   if (document.querySelector('section:nth-child(2)').getBoundingClientRect().top < winH / 2) {
     document.querySelector('section:nth-child(2) h2').classList.add('show')
   } else {
     document.querySelector('section:nth-child(2) h2').classList.remove('show')
   }
-
+ */
 
   document.querySelector('.panel').innerHTML = `
     <li>The window is <strong>${winH}</strong> px tall, <strong>${winW}</strong> px wide</li>

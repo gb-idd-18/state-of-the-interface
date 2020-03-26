@@ -26,8 +26,8 @@ body {
 	font: 900 3em helvetica, sans-serif;
 	text-transform: uppercase;
 	text-shadow: 0 0 0.125em rgba(0,0,0,0.2);
-	opacity: 0;
-	transition: opacity 0.3s;
+	/* opacity: 0;
+	transition: opacity 0.3s; */
 }
 .full-viewport h2.show {
 	opacity: 1;
